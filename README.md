@@ -9,7 +9,7 @@ https://hub.docker.com/_/couchbase
 Single node cluster joined to couchbase network:
 ```
 docker pull couchbase:enterprise-6.0.3
-docker run -d --net=couchbase --name couchbase-server -p 8091-8094:8091-8094 -p 11210:11210 -v /couchbase:/opt/couchbase/var couchbase:enterprise-6.0.3
+docker run -d --net=couchbase --name couchbase-server -p 8091-8094:8091-8094 -p 11210:11210 -v /tmp/couchbase:/opt/couchbase/var couchbase:enterprise-6.0.3
 ```
 http://localhost:8091
 
